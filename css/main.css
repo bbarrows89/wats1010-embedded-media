@@ -25,7 +25,9 @@ body a:hover {
 }
 
 header {
-     min-height: 400px;
+     min-height: 350px;
+     margin: -8px;
+     padding: 10px;
      background-image: url(../img/monkaa_title.jpg);
      background-repeat: no-repeat;
      background-position: center center;
