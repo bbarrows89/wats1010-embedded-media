@@ -20,6 +20,10 @@ body a {
     font-weight: bold;
 }
 
+body a:hover {
+    font-weight: normal;
+}
+
 header {
      min-height: 400px;
      background-image: url(../img/monkaa_title.jpg);
