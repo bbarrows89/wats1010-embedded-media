@@ -11,6 +11,13 @@ html {
 
 body {
     margin: 0;
+    padding: 10px;
+    font-family:"verdana";
+}
+
+body a {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 header {
