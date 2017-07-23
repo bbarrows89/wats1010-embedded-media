@@ -7,7 +7,7 @@
         <title>Monkaa: Watch and Download the animated short film</title>
         <meta name="description" content="Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Watch and download the animated short film here--for free!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Make a favicon that better represents the page. -->
+        
         <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -25,7 +25,7 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
-        
+
         <link rel="stylesheet" href="css/main.css">
     </head>
 
@@ -70,7 +70,7 @@
             <!-- TODO: Embed the .webm and .mp4 video with full controls for a
                  convenient and attractive video viewing experience. -->
             
-            <video controls poster="media/video/video_poster.png">
+            <video controls poster="media/video/video_poster.png" width="100%" height="auto" preload>
                 <source src="media/video/monkaa_1080p.mp4" type="video/mp4">
                 <source src="media/video/monkaa_1080p.webm" type="video/webm">
             </video>
@@ -87,12 +87,14 @@
 
         <section id="listen">
             <h2>Listen</h2>
-            <!-- TODO: Embed an audio player so users can play back the
-                 soundtrack MP3 directly on the page. -->
+            <audio controls>
+                <source src="media/audio/monkaa_soundtrack.mp3" type="audio/mp3">
+            </audio>
+            
 
             <!-- TODO: Style an elegant download link to download the video. -->
             <p>
-                <a class="download-button" href="media/audio/monkaa_soundtrack.mp3">Download as MP3</a>
+                <a class="download-button" href="media/audio/monkaa_soundtrack.mp3" download>Download as MP3</a>
             </p>
         </section>
 
@@ -130,7 +132,7 @@
         </section>
 
         <footer><!-- TODO: Style the footer appropriately. -->
-            <p>This page was created and designed by WEBDEV BEV in 2015. <i>Monkaa</i> was created by <a href="http://www.weybec.com/">Weybec</a> and is used here under a CC-BY license.</p>
+            <p>This page was created and designed by Bryan Barrows in 2017. <i>Monkaa</i> was created by <a href="http://www.weybec.com/">Weybec</a> and is used here under a CC-BY license.</p>
             <nav>
                 <ul class="main-nav">
                     <li><a href="#watch">Watch</a></li>

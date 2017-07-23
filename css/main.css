@@ -12,7 +12,7 @@ html {
 body {
     margin: 0;
     padding: 10px;
-    font-family:"verdana";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body a {
@@ -25,18 +25,20 @@ body a:hover {
 }
 
 header {
-     min-height: 350px;
-     margin: -8px;
-     padding: 10px;
+     min-height: 400px;
      background-image: url(../img/monkaa_title.jpg);
      background-repeat: no-repeat;
      background-position: center center;
      background-size: cover;
  }
 
+ h1, p.subtitle {
+    margin: 0;
+ }
+
  #social {
      background-color: pink;
-     position: absolute;
+     position: fixed;
      top: 50px;
      right: 0;
      width: 25px;
@@ -44,7 +46,7 @@ header {
  }
 
 #social:hover {
-    width: 250px;
+    width: 225px;
 }
 
  #social ul {
@@ -56,3 +58,8 @@ header {
      padding: 0;
      margin: 0;
  }
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+}
