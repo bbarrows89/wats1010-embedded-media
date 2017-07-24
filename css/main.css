@@ -27,8 +27,8 @@ body a {
 
 
 header {
-    min-height: 400px;
-    overflow: hidden;
+    /*min-height: 400px;*/
+    /*overflow: hidden;
     /* background-image: url('../img/monkaa_title.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -38,7 +38,7 @@ header {
 
 .header-vid video{
     width: 100%;
-    height: auto;
+    height: 100px;
     z-index: -1;
 }
 
@@ -74,7 +74,7 @@ header {
      width: 25px;
      transition: 2s width;
  }
-#social h2, a{
+#social h2 {
     padding-left: 30px;
 }
 
@@ -121,3 +121,6 @@ nav li {
     padding: 30px
 }
 
+.social-text {
+    padding-left: 30px;
+}
