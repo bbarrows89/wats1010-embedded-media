@@ -101,14 +101,17 @@ nav li {
 }
 
  .main-nav {
-    position: relative;
+    position: absolute;
     top: 5px;
     left: 275px;
     font-size: 1.2em;
     z-index: 1;
     
 } 
-
+ul.main-nav{
+    padding-left: 125px;
+    padding-top: 125px;
+}
 .weybec-people li img {
     border-radius: 65%;
     width: 175px;
