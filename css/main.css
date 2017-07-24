@@ -11,8 +11,13 @@ html {
 
 body {
     margin: 0;
-    padding: 10px;
+    background: #46afff; /* Old Browsers */
+    background: -webkit-linear-gradient(top,#46afff,#9ed4ff); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,#46afff,#9ed4ff); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,#46afff,#9ed4ff); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, #46afff, #9ed4ff); /*Standard*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 body a {
@@ -20,30 +25,60 @@ body a {
     font-weight: bold;
 }
 
-body a:hover {
-    font-weight: normal;
-}
 
 header {
-     min-height: 400px;
-     background-image: url(../img/monkaa_title.jpg);
-     background-repeat: no-repeat;
-     background-position: center center;
-     background-size: cover;
- }
+    min-height: 400px;
+    overflow: hidden;
+    /* background-image: url('../img/monkaa_title.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; */
+   
+ } 
+
+.header-vid video{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+ .header-text {
+  padding-left: 100px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  background-color: rgba(255,255,255,0.5);
+  z-index: 1;
+
+}
+
+#watch,#listen,#about,footer {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.5);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+}
 
  h1, p.subtitle {
     margin: 0;
  }
 
  #social {
-     background-color: pink;
+     background-color: lightskyblue;
      position: fixed;
      top: 50px;
      right: 0;
      width: 25px;
      transition: 2s width;
  }
+#social h2, a{
+    padding-left: 30px;
+}
+
+
 
 #social:hover {
     width: 225px;
@@ -62,4 +97,27 @@ header {
 nav li {
     list-style-type: none;
     display: inline-block;
+    text-decoration: none;
 }
+
+ .main-nav {
+    position: absolute;
+    top: 5px;
+    left: 275px;
+    font-size: 1.2em;
+    z-index: 1;
+    
+} 
+
+.weybec-people li img {
+    border-radius: 65%;
+    width: 175px;
+    height: auto;
+}
+
+.weybec-people li {
+    display: inline-block;
+    text-align: center;
+    padding: 30px
+}
+

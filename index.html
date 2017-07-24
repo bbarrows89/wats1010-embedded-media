@@ -26,6 +26,8 @@
         <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
         <link rel="stylesheet" href="css/main.css">
     </head>
 
@@ -39,8 +41,14 @@
                  insert backgrounds and other images into the page. Balance
                  image quality with file size to achieve the best user
                  experience. -->
-            <h1>Monkaa</h1>
-            <p class="subtitle">An open source short film</p>
+        <div class="header-vid">
+            
+            <video loop autoplay muted src="media/video/flying_monkey_loop_handbrake.mp4" type="video/mp4"></video>
+            <div class="header-text">
+                <h1>Monkaa</h1>
+                <p class="subtitle">An open source short film</p>
+            </div>
+        </div>
             <nav>
                 <ul class="main-nav">
                     <li><a href="#watch">Watch</a></li>
@@ -51,12 +59,7 @@
         </header>
 
         <aside id="social">
-            <!-- TODO: Experiment with different ways of making this set of
-                 share links stand out and stay near the user all the time.
-                 Try using 'absolute', 'fixed', or even 'sticky' positioning
-                 to achieve a user-friendly effect. You may also use the
-                 `:hover` pseudoselector to trigger height or width changes
-                 that could help you make a more interactive design. -->
+            
             <h2>Share</h2>
             <ul class="social-links">
                 <li class="twitter"><a href="http://twitter.com">Twitter</a></li>
@@ -67,8 +70,7 @@
 
         <section id="watch">
             <h2>Watch</h2>
-            <!-- TODO: Embed the .webm and .mp4 video with full controls for a
-                 convenient and attractive video viewing experience. -->
+            
             
             <video controls poster="media/video/video_poster.png" width="100%" height="auto" preload>
                 <source src="media/video/monkaa_1080p.mp4" type="video/mp4">
@@ -110,17 +112,17 @@
                      each headshot below. Images are located in the
                      ``img/weybec/`` directory. -->
                 <li>
-                    <img class="headshot" src="TODO" alt="Pratik Solanki headshot"><br>
+                    <img class="headshot" src="img/weybec/pratik_solanki.jpg" alt="Pratik Solanki headshot"><br>
                     Pratik Solanki<br>
                     Co-Founder
                 </li>
                 <li>
-                    <img class="headshot" src="TODO" alt="Nita Ravalji headshot"><br>
+                    <img class="headshot" src="img/weybec/Nita-ravalji1.jpg" alt="Nita Ravalji headshot"><br>
                     Nita Ravalji<br>
                     Co-Founder
                 </li>
                 <li>
-                    <img class="headshot" src="TODO" alt="Niyal Parmar headshot"><br>
+                    <img class="headshot" src="img/weybec/niyal_parmar.jpg" alt="Niyal Parmar headshot"><br>
                     Niyal Parmar<br>
                     Co-Founder
                 </li>

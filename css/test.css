@@ -1,0 +1,142 @@
+/******************************************************************************
+ * WATS1010: Introduction to Web Development
+ * Embedded Media Assignment
+ *
+ * Site Styles
+ *****************************************************************************/
+
+html {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+body{
+    margin:0;
+}
+/* .header-unit {
+  height: 150px;
+  border: 2px solid #000;
+  border-right:none;
+  border-left: none;
+  position: relative;
+  padding: 20px;
+}
+#video-container {
+	position: absolute;
+}
+#video-container {
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+video {
+	position:absolute;
+	z-index:-1;
+}
+video.fillWidth {
+	width: 100%; */
+}
+
+ h1, p.subtitle {
+    margin: 0;
+ }
+
+ #social {
+     background-color: lightskyblue;
+     position: fixed;
+     top: 50px;
+     right: 0;
+     width: 25px;
+     transition: 2s width;
+ }
+#social h2, a{
+    padding-left: 30px;
+}
+
+
+
+#social:hover {
+    width: 225px;
+}
+
+ #social ul {
+     padding: 0;
+     list-style-type: none;
+ }
+
+ #social li {
+     padding: 0;
+     margin: 0;
+ }
+
+
+
+/* .main-nav {
+    text-align: center;
+    margin-bottom: 200px;
+} */
+
+/* .main-nav a:hover {
+    font-weight: normal;
+} */
+
+body a:hover {
+    font-weight: normal;
+}
+
+
+
+html, body{
+	height: 100%;
+}
+
+
+/* header height sets static height needed for the video to be rendered in browser view port
+ * for height in percent to work parent container needs to have percent value in this case body was given 100% height
+*/
+header{
+	height: 90%;
+	position: relative;
+	background-color: red;
+}
+
+/* hero_area div containing video needs to be the size of parent div height, thus top, left, right, bottom helps to stretch hero_area div to the size of parent by giving position absolute.
+ * overflow hides the video over-flowing outside the current size of hero_area. this can be helpful to control the visible part of video by pulling it using position value in video (top / bottom/ left/ right).
+*/
+
+.hero_area{
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	position: absolute;
+	overflow: hidden;
+}
+
+audio, canvas, video{
+	display: inline-block;
+}
+
+/* here bottom value can be set to 0 to always match the buttom part of the video with the buttom part of the containing div, in our case hero_area. I have used negative -150px to pull the video downward so that i can chop some unwanted area which overflow of parent(hero_area) will hide.
+* as width is set to 100%, and height to auto, as the width of the browser changes height is auto calculated making the video responsive
+*/
+
+.hero_area video{
+	bottom: -150px;
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
